@@ -1,0 +1,96 @@
+### Register User
+POST http://localhost:9080/register
+Content-Type: application/json
+
+{
+  "username": "pandu_12",
+  "password": "1234",
+  "email": "pandu@gmail.com",
+  "name": "Pandu"
+}
+
+###
+
+### Login User
+POST http://localhost:9080/login
+Content-Type: application/json
+
+{
+  "email": "pandu@gmail.com",
+  "password": "1234"
+}
+
+###
+
+### User and Profile
+GET http://localhost:9080/get_user_and_profile?token=a90c5d6c184cde30e3f4b81ed39352c0234e5c2cfb3e328a1209b47c26cd15a6
+
+###
+POST http://localhost:9080/update_profile_data
+Content-Type: application/json
+
+{
+  "token": "dc9d1c894e761c37d375d1572ce37fe06e34948dc0a43ae0ecc7d482d86c9f15",
+  "bio": "Hey, I am Pandu. I am from Hyderabad and work at XYZ company. I am a true learner.",
+  "currentPost": "CTO",
+  "pastWork": [
+    {
+      "company": "Microsoft",
+      "position": "CTO",
+      "years": "2+"
+    }
+  ],
+  "education": [
+    {
+      "school": "IIIT",
+      "degree": "B.Tech",
+      "fieldOfStudy": "2020-2024"
+    }
+  ]
+}
+
+
+### Update Profile
+POST http://localhost:9080/update_profile_data
+Content-Type: application/json
+
+{
+  "token": "22db76fec58aa4334dbb50702b58c4dfc07de0d8989a2da7aaffe95b284ebd6a",
+  "bio": "Hey, I am Pandu. I am from Hyderabad and work at XYZ company. I am a true learner.",
+  "currentPost": "CTO",
+  "pastWork": [
+    {
+      "company": "Microsoft",
+      "position": "CTO",
+      "years": "2+"
+    }
+  ],
+  "education": [
+    {
+      "school": "IIIT",
+      "degree": "B.Tech",
+      "fieldOfStudy": "2020-2024"
+    }
+  ]
+}
+
+
+
+###
+
+### Get All Users
+GET http://localhost:9080/user/get_all_users
+
+
+### Create Post
+POST http://localhost:9080/post
+Content-Type: application/json
+
+{
+  "token": "22db76fec58aa4334dbb50702b58c4dfc07de0d8989a2da7aaffe95b284ebd6a",
+  "body": "Hello this is my first LinkedIn clone post!"
+}
+
+###      
+GET http://localhost:9080/posts
+
