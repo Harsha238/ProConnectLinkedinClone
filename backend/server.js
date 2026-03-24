@@ -20,7 +20,8 @@ app.use("/",userRoutes);
 app.use(express.static("uploads"));
 
 mongoose.connect(process.env.MONGO_URI).then(() => {
-  app.listen(9080, () => {
-    console.log("Server running on port 9080");
+  const PORT = process.env.PORT || 9080;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
   });
 });
