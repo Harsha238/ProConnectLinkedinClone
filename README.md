@@ -8,6 +8,7 @@ Users can connect, share posts, and interact in a clean and responsive interface
 🌐 Live Demo
 
 🔗 Frontend: https://pro-connect-linkedin-clone-seven.vercel.app
+
 🔗 Backend: https://proconnectlinkedinclone-2.onrender.com
 
 ---
@@ -44,22 +45,6 @@ Deployment
 - 🌍 Vercel (Frontend)
 - ☁️ Render (Backend)
 - 🗄️ MongoDB Atlas (Database)
-
----
-
-📂 Project Structure
-
-ProConnectLinkedinClone/
-│
-├── frontend/        # Next.js frontend
-│
-├── backend/         # Express backend
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── uploads/
-│
-└── README.md
 
 ---
 
